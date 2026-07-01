@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urban Prime</title>
+    <!--bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!--css-->
+    <link rel="stylesheet" href="../css/prime.css" />
+
+    <!--biblioteca JS-->
+    <script
+      src="https://code.jquery.com/jquery-4.0.0.min.js"
+      integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
+      crossorigin="anonymous"
+    ></script>
+
+    <!--JavaScript do Bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Font Awesome-->
+    <!--permite ✔ Check e etc-->
+    <script
+      src="https://kit.fontawesome.com/491f37b692.js"
+      crossorigin="anonymous"
+
+    ></script>
+    <!--Progress Bar, Barra horizontal [████████░░░░░░░░] 50%-->
+    <script src="../js/progressbar.min.js"></script>
+
+    <!--Parallax, o fundo se move em uma velocidade diferente, permite as imagens passarem-->
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="container" id="nav-container">
+        <nav class="navbar navbar-expand-lg fixed-top">
+          <a href="#" class="navbar-brand">
+            <img id="logo" src="../img/logotest.png" alt="UrbanPrime" /> Urban Prime
+          </a>
+        <button class="navbar-toggler" type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbar-links"
+        aria-controls="navbar-links" 
+        aria-expanded="false">
+       <span class="navbar-toggler-icon"></span>
+       </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbar-links"
+          >
+            <div class="navbar-nav navbar-brand">
+              <a class="nav-item nav-link" href="../sites/index.html">Home</a>
+              <a class="nav-item nav-link" href="../sites/login.html"> Login</a>
+              <a class="nav-item nav-link" href="../sites/produtos.html"
+                >Vitrine</a
+              >
+              <a class="nav-item nav-link" href="../sites/novidades.html"
+                >Novidades</a
+              >
+              <a class="nav-item nav-link" href="../sites/time.html">Time</a>
+              <a class="nav-item nav-link" href="../sites/contato.html"
+                >Contato</a
+              >
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#mainSlider"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#mainSlider"
+            data-bs-slide-to="1"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="../img/princial1.jpg"
+              class="d-block w-100"
+              alt="Tenis banner"
+            />
+            <div class="carousel-caption">
+              <h2>Os melhores lançamentos estão aqui.</h2>
+              <p>Descubra modelos exclusivos para renovar seu visual.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../img/princiapl2.jpg"
+              class="d-block w-100"
+              alt="Novo estilo"
+            />
+            <div class="carousel-caption">
+              <h2>Seu estilo começa pelos pés.</h2>
+              <p>Encontre o Tênis ideal para cada momento.</p>
+              <a href="#" class="main-btn">Entrar em Contato</a>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev d-none d-md-block"
+          type="button"
+          data-bs-target="#mainSlider"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next d-none d-md-block" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+        </button>
+        </div>
+       <!--Sobre a empresa-->
+       <div id="about-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="main-title"> Sobre a Urban Prime</h3>
+            </div>
+            <div class="col-md-6">
+              <img class="img-fluid" src="../img/banner.jpg" alt="Banner Urban Prime">
+            </div>
+            <div class="col-md-6">
+              <h3 class="about-title"> A Urban Prime pensa no seu futuro.</h3>
+              <div class="subtitulo">
+              <p> Na Urban Prime, acreditamos que um Tênis vai além da moda: Ele represente personalidade, conforto e atitude. </p>
+              <p> Nossa missão é oferecer qualidade, desing e conforto para que capa passo seja dado com confiança.</p>
+              <p> Veja nosssos diferencias:</p>
+              </div>
+              <ul id="about-list">
+                <li><i class="fas fa-check"></i>Produtos selecionados com qualidade premium</li>
+                <li><i class="fas fa-check"></i>Modelo Para todo os estilos</li>
+                <li><i class="fas fa-check"></i>Entrega rápida e segura</li>
+                <li><i class="fas fa-check"></i>Atendimento personalizado</li>
+                <li><i class="fas fa-check"></i>compra 100% segura</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--Serviçoes da empresa-->
+         <div id="services-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+             <h3 class="main-title">Nossos Destaques</h3>
+             </div>
+              <div class="col-md-4 service-box">
+              <i class=" fas fa-rocket"></i>
+              <h4>Lançamento</h4>
+              <p>Fique por dentro dos modelos mais recentes do mercado.</p>
+             </div>
+              <div class="col-md-4 service-box">
+              <i class=" fas fa-shoe-prints"></i>
+              <h4>conforto para o dia a dia</h4>
+              <p>Tênis ideais para trabalho, passeios e rotina.</p>
+             </div>
+             <div class="col-md-4 service-box">
+              <i class=" fas fa-fire"></i>
+              <h4>Estilo Urbano</h4>
+              <p>Modelos inspirados nas tendências streetwear.</p>
+             </div>
+             <div class="col-md-4 service-box">
+              <i class=" fas fa-person-running"></i>
+              <h4>Esportivos</h4>
+              <p>Tênis para academia, caminhada e corrida. </p>
+             </div>
+              <div class="col-md-4 service-box">
+              <i class=" fas fa-tags"></i>
+              <h4>Melhores Ofertas</h4>
+              <p>Preço justo e promoções especiais para você.</p>
+             </div>
+             <div class="col-md-4 service-box">
+              <i class=" fas fa-headset"></i>
+              <h4>Suporte 24/7</h4>
+              <p>Você sempre terá alguém da equipe disponivel para suporte, em diferentes plataformas. (chat, email, skype). </p>
+             </div>
+          </div>
+        </div>
+      </div>
+      <!--Dados Da empresa-->
+      <div id="data-area">
+        <div class="container">
+          <div class="row">
+          <div class="col-md-3 circle-box">
+            <div id="CircleA"></div>
+            <p>Tênis Vendidos</p>
+           </div>
+           <div class="col-md-3 circle-box">
+            <div id="CircleB"></div>
+            <p>Clientes Satisfeitos</p>
+           </div>
+           <div class="col-md-3 circle-box">
+            <div id="CircleC"></div>
+            <p>Entregas realizadas</p>
+           </div>
+           <div class="col-md-3 circle-box">
+            <div id="CircleD"></div>
+            <p>Modelos Disponíveis</p>
+           </div>
+          </div>
+        </div>
+       </div>
+      </div>
+    </main>
+  </body>
+  <script src="../js/script.js"></script>
+</html>
