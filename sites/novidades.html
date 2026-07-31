@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Urban Prime | Novidades</title>
+    <title>Urban Prime | Contato</title>
     <!--bootstrap-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -61,52 +61,78 @@
           >
             <div class="navbar-nav navbar-brand">
               <a class="nav-item nav-link" href="../sites/index.html">Home</a>
-              <a class="nav-item nav-link" href="../sites/login.html"> Login</a>
+              <a class="nav-item nav-link" href="../sites/login.php"> Login</a>
               <a class="nav-item nav-link" href="../sites/produtos.html"
                 >Vitrine</a
               >
               <a class="nav-item nav-link" href="../sites/novidades.html"
-                >Novidades</a
-              >
-              <a class="nav-item nav-link" href="../sites/time.html">Time</a>
-              <a class="nav-item nav-link" href="../sites/contato.html"
                 >Contato</a
               >
+              <a class="nav-item nav-link" href="../sites/time.html">Time</a>
             </div>
           </div>
         </nav>
       </div>
     </header>
-    <div id="news-area">
-      <div class="container">
-        <div class="col-md-12">
-          <h3 class="main-title">Fique por dentro das novidades</h3>
-        </div>
-        <p>
-          Receba ofertas exclusivas, lançamentos e novidades diretamente no seu
-          e-mail.
-        </p>
-        <form action="">
-          <input
-            type="email"
-            class="form-control"
-            id="email-input"
-            name="email"
-            placeholder="Digite seu e-mail"
-            required
-          />
-          <input type="submit" id="news-btn" value="Quero receber" />
-        </form>
-      </div>
-      <!--Carrossel abaixo-->
-      <div id="call-area">
+    <footer>
+      <div id="contact-area">
         <div class="container">
           <div class="row">
-            <p>Pronto para garantir o seu próximo tênis?</p>
-            <button class="main-btn" id="call-btn">Comprar agora</button>
+            <div class="col-md-12">
+              <h3 class="main-title">Entre em contato conosco</h3>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-phone"></i>
+              <p>
+                <span class="contact-title">Ligue para: </span> (48) 98558-2738
+              </p>
+              <p><span class="contact-title">Horários: </span> 7:00 - 19:00</p>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-envelope"></i>
+              <p>
+                <span class="contact-title">Envie um e-mail:</span>
+                contato@Urbanprime.com.br
+              </p>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>
+                <span class="contact-title">
+                  Venha conhecer nossas variedades:</span
+                >
+                Rua Nova - 520
+              </p>
+            </div>
+            <div class="col-md-6" id="msg-box">
+              <p>Nos deixe uma mensagem, ou dúvidas:</p>
+            </div>
+            <div class="col-md-6" id="contact-form">
+              <form action="">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="E-mail"
+                  name="email"
+                />
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Assunto"
+                  name="subject"
+                />
+                <textarea
+                  class="form-control"
+                  rows="3"
+                  placeholder="Sua mensagem..."
+                  name="message"
+                ></textarea>
+                <input type="submit" class="main-btn" value="Enviar" />
+              </form>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   </body>
 </html>

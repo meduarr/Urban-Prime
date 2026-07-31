@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urban Prime | Login</title>
+    <!--bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!--css-->
+    <link rel="stylesheet" href="../css/prime.css" />
+
+    <!--biblioteca JS-->
+    <script
+      src="https://code.jquery.com/jquery-4.0.0.min.js"
+      integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
+      crossorigin="anonymous"
+    ></script>
+
+    <!--JavaScript do Bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Font Awesome-->
+    <!--permite ✔ Check e etc-->
+    <script
+      src="https://kit.fontawesome.com/491f37b692.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Progress Bar, Barra horizontal [████████░░░░░░░░] 50%-->
+    <script src="js/progressbar.min.js"></script>
+
+    <!--Parallax, o fundo se move em uma velocidade diferente, permite as imagens passarem-->
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+  </head>
+  <body style="background: #1b1c1d">
+    <header>
+      <div class="container" id="nav-container">
+        <nav class="navbar navbar-expand-lg fixed-top">
+          <a href="#" class="navbar-brand">
+            <img id="logo" src="../img/logotest.png" alt="UrbanPrime" /> Urban
+            Prime
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-links"
+            aria-controls="navbar-links"
+            aria-expanded="false"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbar-links"
+          >
+            <div class="navbar-nav navbar-brand">
+              <a class="nav-item nav-link" href="../sites/index.html">Home</a>
+              <a class="nav-item nav-link" href="../sites/login.php"> Login</a>
+              <a class="nav-item nav-link" href="../sites/produtos.html"
+                >Vitrine</a
+              >
+              <a class="nav-item nav-link" href="../sites/novidades.html"
+                >Contato</a
+              >
+              <a class="nav-item nav-link" href="../sites/time.html">Time</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div id="portfolio-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="main-title mt-5">Nossa Coleção:</h3>
+            <p class="subtitulo text-center">
+              💥QUEIMA DE ESTOQUE💥<br />
+              Mais de 30% de desconto em todos os produtos!
+            </p>
+            <p class="subtitulo text-center">
+              Encontre os modelos mais desejados das maiores marcas. Escolha o
+              tênis ideal para o seu estilo e conforto.
+            </p>
+          </div>
+          <div class="col-md-12" id="filter-btn-box">
+            <button class="main-btn filter-btn active" id="all-btn">
+              Todos
+            </button>
+            <button class="main-btn filter-btn" id="Nike-btn">Nike</button>
+            <button class="main-btn filter-btn" id="puma-btn">Puma</button>
+            <button class="main-btn filter-btn" id="adidas-btn">Adidas</button>
+          </div>
+          <div class="col-md-4 project-box Nike">
+            <div class="card product-card">
+              <img
+                src="../img/imgprodutos/AirJordan1.jpeg"
+                class="card-img-top product-img"
+                alt="Nike Air Jordan 1"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Nike Air Jordan</h5>
+
+                <p>
+                  <span class="old-price">R$ 899,90</span>
+                  <span class="desconto"> 💥22% OFF </span>
+                </p>
+
+                <h4 class="preço">R$ 699,90</h4>
+
+                <p class="cartão">ou <strong>12x de R$ 59,00</strong></p>
+
+                <button class="main-btn2">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 project-box Puma">
+            <div class="card product-card">
+              <img
+                src="../img/imgprodutos/puma2.jpg"
+                class="card-img-top product-img"
+                alt="Tênis Puma1"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Puma Palermo</h5>
+
+                <p>
+                  <span class="old-price">R$ 599,90</span>
+                  <span class="desconto">💥25% OFF</span>
+                </p>
+
+                <h4 class="preço">R$ 449,90</h4>
+
+                <p class="cartão">ou <strong>12x de R$ 50,00</strong></p>
+
+                <button class="main-btn2">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 project-box Nike">
+            <div class="card product-card">
+              <img
+                src="../img/imgprodutos/AirNike2.jpeg"
+                class="img-fluid"
+                alt="Nike AirJordan2"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Nike Air Force 1</h5>
+
+                <p>
+                  <span class="old-price">R$ 799,90</span>
+                  <span class="desconto">💥20% OFF</span>
+                </p>
+
+                <h4 class="preço">R$ 639,90</h4>
+
+                <p class="cartão">ou <strong>12x de R$ 55,50</strong></p>
+
+                <button class="main-btn2">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 project-box Adidas">
+            <div class="card product-card">
+              <img
+                src="../img/imgprodutos/adias2.jpg"
+                class="img-fluid"
+                alt="Tênis Adidas 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Adidas Campus 00s</h5>
+                <p>
+                  <span class="old-price">R$ 799,90</span>
+                  <span class="desconto">💥22% OFF</span>
+                </p>
+                <h4 class="preço">R$ 619,90</h4>
+                <p class="cartão">ou <strong>12x de R$53,50</strong></p>
+                <button class="main-btn2">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 project-box Puma">
+            <div class="card product-card">
+              <img
+                src="../img/imgprodutos/PumaSuede1.jpeg"
+                class="img-fluid"
+                alt="Tênis Puma2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Puma Suede Classic</h5>
+                <p>
+                  <span class="old-price">R$ 699,90</span>
+                  <span class="desconto">💥20% OFF</span>
+                </p>
+                <h4 class="preço">R$ 559,90</h4>
+                <p class="cartão">ou <strong>12x de R$49,50</strong></p>
+                <button class="main-btn2">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 project-box Adidas">
+            <div class="card product-card">
+              <img
+                src="../img/imgprodutos/AdidasSuperStar1.jpeg"
+                class="img-fluid"
+                alt="Tênis Adidas2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Adidas Superstar</h5>
+                <p>
+                  <span class="old-price">R$ 699,90</span>
+                  <span class="desconto">💥20% OFF</span>
+                </p>
+                <h4 class="preço">R$ 559,90</h4>
+                <p class="cartão">ou <strong>12x de R$49,50</strong></p>
+                <button class="main-btn2">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 project-box Puma">
+            <div class="card product-card">
+              <img
+                src="../img/imgprodutos/puma3.jpg"
+                class="img-fluid"
+                alt="Tênis Puma3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Puma RS-X</h5>
+                <p>
+                  <span class="old-price">R$ 799,90</span>
+                  <span class="desconto">💥25% OFF</span>
+                </p>
+                <h4 class="preço">R$ 599,90</h4>
+                <p class="cartão">ou <strong>12x de R$55,50</strong></p>
+                <button class="main-btn2">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 project-box Adidas">
+            <div class="card product-card">
+              <img
+                src="../img/imgprodutos/adidas3.jpg"
+                class="img-fluid"
+                alt="Tênis Adidas3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Adidas Forum Low</h5>
+                <p>
+                  <span class="old-price">R$ 749,90</span>
+                  <span class="desconto">💥30% OFF</span>
+                </p>
+                <h4 class="preço">R$ 524,93</h4>
+                <p class="cartão">ou <strong>12x de R$52,90</strong></p>
+                <button class="main-btn2">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 project-box Nike">
+            <div class="card product-card">
+              <img
+                src="../img/imgprodutos/nike3.jpeg"
+                class="img-fluid"
+                alt="Tênis Nike3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Nike Air Max 90</h5>
+                <p>
+                  <span class="old-price">R$ 899,90</span>
+                  <span class="desconto">💥20% OFF</span>
+                </p>
+                <h4 class="preço">R$ 719,90</h4>
+                <p class="cartão">ou <strong>12x de R$61,00</strong></p>
+                <button class="main-btn2">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 project-box Puma">
+            <div class="card product-card">
+              <img
+                src="../img/imgprodutos/puma4.jpg"
+                class="img-fluid"
+                alt="Puma4"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Puma Future Rider</h5>
+                <p>
+                  <span class="old-price">R$ 699,90</span>
+                  <span class="desconto">💥31% OFF</span>
+                </p>
+                <h4 class="preço">R$482,93</h4>
+                <p class="cartão">ou <strong>12x de R$42,90</strong></p>
+                <button class="main-btn2">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 project-box Nike">
+            <div class="card product-card">
+              <img
+                src="../img/imgprodutos/nike4.jpeg"
+                class="img-fluid"
+                alt="Nike 4"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Nike Air Max 97</h5>
+                <p>
+                  <span class="old-price">R$ 999,90</span>
+                  <span class="desconto">💥20% OFF</span>
+                </p>
+                <h4 class="preço">R$ 799,90</h4>
+                <p class="cartão">ou <strong>12x de R$68,00</strong></p>
+                <button class="main-btn2">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 project-box Adidas">
+            <div class="card product-card">
+              <img
+                src="../img/imgprodutos/adidas4.jpg"
+                class="img-fluid"
+                alt="Adidas 4"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Adidas ZX 2K Boost</h5>
+                <p>
+                  <span class="old-price">R$ 899,90</span>
+                  <span class="desconto">💥20% OFF</span>
+                </p>
+                <h4 class="preço">R$ 719,90</h4>
+                <p class="cartão">ou <strong>12x de R$62,80</strong></p>
+                <button class="main-btn2">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 project-box Nike">
+            <div class="card product-card">
+              <img
+                src="../img/imgprodutos/nike5.jpeg"
+                class="img-fluid"
+                alt="Nike 5"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Nike Air Max 270</h5>
+                <p>
+                  <span class="old-price">R$950,00</span>
+                  <span class="desconto">💥35% OFF</span>
+                </p>
+                <h4 class="preço">R$617,50</h4>
+                <p class="cartão">ou <strong>12x de R$52,90</strong></p>
+                <button class="main-btn2">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 project-box Adidas">
+            <div class="card product-card">
+              <img
+                src="../img/imgprodutos/adidas5.jpg"
+                class="img-fluid"
+                alt="Adidas 5"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Adidas NMD R1</h5>
+                <p>
+                  <span class="old-price">R$ 899,90</span>
+                  <span class="desconto">💥20% OFF</span>
+                </p>
+                <h4 class="preço">R$ 719,90</h4>
+                <p class="cartão">ou <strong>12x de R$61,80</strong></p>
+                <button class="main-btn2">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 project-box Puma">
+            <div class="card product-card">
+              <img
+                src="../img/imgprodutos/puma5.jpg"
+                class="img-fluid"
+                alt="Puma 5"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Puma RS-X³</h5>
+                <p>
+                  <span class="old-price">R$ 799,90</span>
+                  <span class="desconto">💥20% OFF</span>
+                </p>
+                <h4 class="preço">R$ 639,90</h4>
+                <p class="cartão">ou <strong>12x de R$55,30</strong></p>
+                <button class="main-btn2">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 project-box Adidas">
+            <div class="card product-card">
+              <img
+                src="../img/imgprodutos/adidas6.jpg"
+                class="img-fluid"
+                alt="Adidas 6"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Adidas Ultraboost</h5>
+                <p>
+                  <span class="old-price">R$ 999,90</span>
+                  <span class="desconto">💥25% OFF</span>
+                </p>
+                <h4 class="preço">R$ 749,90</h4>
+                <p class="cartão">ou <strong>12x de R$65,49</strong></p>
+                <button class="main-btn2">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 project-box Puma">
+            <div class="card product-card">
+              <img
+                src="../img/imgprodutos/puma6.jpg"
+                class="img-fluid"
+                alt="Puma 6"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Puma Future Rider</h5>
+                <p>
+                  <span class="old-price">R$ 799,90</span>
+                  <span class="desconto">💥20% OFF</span>
+                </p>
+                <h4 class="preço">R$ 639,90</h4>
+                <p class="cartão">ou <strong>12x de R$57,30</strong></p>
+                <button class="main-btn2">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 project-box Nike">
+            <div class="card product-card">
+              <img
+                src="../img/imgprodutos/nike6.jpeg"
+                class="img-fluid"
+                alt="Nike 6"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Nike Air Max 95</h5>
+                <p>
+                  <span class="old-price">R$ 899,90</span>
+                  <span class="desconto">💥25% OFF</span>
+                </p>
+                <h4 class="preço">R$ 674,90</h4>
+                <p class="cartão">ou <strong>12x de R$59,90</strong></p>
+                <button class="main-btn2">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <!--Serviçoes da empresa-->
+          <div id="services-area">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <h3 class="main-title"><span>Referencias:</span></h3>
+                </div>
+                <div class="col-md-4 service-box">
+                  <i class="fas fa-truck-fast"></i>
+                  <h4>Frete para Todo o Brasil</h4>
+                </div>
+                <div class="col-md-4 service-box">
+                  <i class="fas fa-lock"></i>
+                  <h4>Compra 100% Segura</h4>
+                </div>
+                <div class="col-md-4 service-box">
+                  <i class="fas fa-wallet"></i>
+                  <h4>Parcelamento em até 12x</h4>
+                </div>
+                <div class="col-md-4 service-box">
+                  <i class="fas fa-award"></i>
+                  <h4>Produtos Originais</h4>
+                </div>
+                <div class="col-md-4 service-box">
+                  <i class="fas fa-arrow-right-arrow-left"></i>
+                  <h4>Troca fácil</h4>
+                </div>
+                <div class="col-md-4 service-box">
+                  <i class="fas fa-tags"></i>
+                  <h4>Ofertas exclusivas</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Copy-->
+      <div id="copy-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p>Desenvolvido por <a href=""> Meduarr</a> &copy; 2026</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/produtos.js"></script>
+  </body>
+</html>

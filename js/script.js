@@ -87,3 +87,26 @@ $(document).ready(function () {
     }
   });
 });
+
+$(document).ready(function () {
+  $("#togglePassword").click(function () {
+    let senha = document.getElementById("senha");
+
+    if (senha.type === "password") {
+      senha.type = "text";
+    } else {
+      senha.type = "password";
+    }
+  });
+  $("form").submit(function (e) {
+    let senha = $("#novaSenha").val();
+    let confirmar = $("#confirmarSenha").val();
+
+    if (senha !== confirmar) {
+      e.preventDefault(); // impede o envio do formulário
+      $("#erroSenha").text("As senhas não coincidem.");
+    } else {
+      $("#erroSenha").text("");
+    }
+  });
+});

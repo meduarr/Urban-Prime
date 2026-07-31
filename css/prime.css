@@ -83,6 +83,7 @@ header,
   border-radius: 30px;
   border: 3px solid transparent;
   transition: 0.5s;
+  font-weight: 530;
 }
 
 .main-btn:hover {
@@ -185,7 +186,13 @@ header,
 .fa-fire,
 .fa-person-running,
 .fa-tags,
-.fa-headset {
+.fa-headset,
+.fa-truck-fast,
+.fa-lock,
+.fa-wallet,
+.fa-award,
+.fa-arrow-right-arrow-left,
+.fa-tags {
   color: #fff;
 }
 
@@ -216,7 +223,9 @@ header,
 .card-body {
   text-align: center;
 }
-
+.product-card {
+  background-color: white; !important;
+}
 .subtitulo {
   color: #fff;
   margin: 0 0 50px 0;
@@ -461,4 +470,121 @@ header,
 #copy-area a:hover {
   text-decoration: none;
   color: #1e90ff;
+}
+
+/*login*/
+
+.form-card {
+  background-color: transparent;
+  border: 3px solid #1e90ff;
+  border-radius: 16px;
+  background-image: url(../img/fundo.jpeg);
+}
+
+.form-label {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.form-control:focus {
+  background: transparent;
+  box-shadow: none;
+}
+
+.input-group-text {
+  background-color: transparent;
+  color: #fff;
+  margin-bottom: 10px;
+}
+#login {
+  margin-bottom: 30px;
+}
+
+#cadastro,
+#nvsenha {
+  margin-bottom: 8px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+}
+.form-control,
+.form-control:focus,
+.form-control:valid,
+.form-control:invalid {
+  color: #fff;
+  -webkit-text-fill-color: #fff;
+  background-color: transparent;
+  margin-bottom: 10px;
+}
+
+.login-container {
+  margin-top: 80px;
+}
+
+.cadastro {
+  color: #1e90ff;
+}
+/* Nova senha*/
+/* Remove o botão nativo de mostrar senha do Edge */
+input::-ms-reveal,
+input::-ms-clear {
+  display: none;
+}
+
+/* Remove os os botões do Edge/Chrome/Chromium */
+input[type="password"]::-webkit-credentials-auto-fill-button,
+input[type="password"]::-webkit-contacts-auto-fill-button,
+input[type="password"]::-webkit-textfield-decoration-container {
+  display: none !important;
+}
+
+.form-control:-webkit-autofill,
+.form-control:-webkit-autofill:hover,
+.form-control:-webkit-autofill:focus,
+.form-control:-webkit-autofill:active {
+  -webkit-text-fill-color: #fff !important;
+  -webkit-box-shadow: 0 0 0px 1000px #050816 inset !important;
+  box-shadow: 0 0 0px 1000px #050816 inset !important;
+  border-color: none !important;
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+#erro,
+#sucesso {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*loja */
+
+.old-price {
+  text-decoration: line-through !important;
+}
+
+.main-btn2 {
+  background-color: #1e90ff;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 180px;
+  height: 50px;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 30px;
+  border: 3px solid transparent;
+  transition: 0.5s;
+  font-weight: 530;
+}
+.main-btn2:hover {
+  text-decoration: none;
+  border-color: #1e90ff;
+  background-color: #1b1c1d;
+}
+
+.desconto {
+  color: green;
+  font-weight: bold;
+  font-size: 18px;
 }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Urban Prime | Login</title>
+    <title>Urban Prime | Senha</title>
     <!--bootstrap-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -40,7 +40,7 @@
     <!--Parallax, o fundo se move em uma velocidade diferente, permite as imagens passarem-->
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
   </head>
-  <body style="background-color: #1b1b1b">
+  <body class="bodys" style="background-color: black">
     <header>
       <div class="container" id="nav-container">
         <nav class="navbar navbar-expand-lg fixed-top">
@@ -64,38 +64,48 @@
           >
             <div class="navbar-nav navbar-brand">
               <a class="nav-item nav-link" href="../sites/index.html">Home</a>
-              <a class="nav-item nav-link" href="../sites/login.html"> Login</a>
+              <a class="nav-item nav-link" href="../sites/login.php"> Login</a>
               <a class="nav-item nav-link" href="../sites/produtos.html"
                 >Vitrine</a
               >
               <a class="nav-item nav-link" href="../sites/novidades.html"
-                >Novidades</a
-              >
-              <a class="nav-item nav-link" href="../sites/time.html">Time</a>
-              <a class="nav-item nav-link" href="../sites/contato.html"
                 >Contato</a
               >
+              <a class="nav-item nav-link" href="../sites/time.html">Time</a>
             </div>
           </div>
         </nav>
       </div>
     </header>
-    <!--Portfólio-->
-    <div id="portfolio-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h3 class="main-title">Vitrine:</h3>
-            <p>
-              Os lançamentos e os modelos mais desejados estão esperando por
-              você.
-            </p>
-          </div>
-          <div class="col-md-12" id="filter-btn-box">
-            <button class="main-btn filter-btn active"></button>
+     <div class="container login-container">
+      <div class="row justify-content-center">
+        <div class="col-11 col-sm-10 col-md-8 col-lg-6">
+          <div class="card card-body p4 form-card">
+           <h3 class="main-title" id="login">Nova senha</h3>
+            <form action="../php/recuperarsenha.php" method="POST" class="form-login" >
+              <div class="mb-3">
+                <label for="email" class="form-label" > E-mail</label>
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Digite seu e-mail"
+                    required
+                  />
+                </div>
+              </div>
+              <button type="submit" class="main-btn">Enviar Link</button>
+            </form>
           </div>
         </div>
       </div>
     </div>
+    </div>
   </body>
 </html>
+
