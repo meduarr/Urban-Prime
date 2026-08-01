@@ -38,7 +38,7 @@ try {
     $mail->Subject = "Recuperação de senha - Urban Prime";
 
 
-    $link = "http://localhost/URBANPRIME/sites/nova_senha.php?token=" . $token;
+    $link = "https://urbanprime.ct.ws/sites/nova_senha.php?token=" . $token;
 
 
     $mail->Body = "

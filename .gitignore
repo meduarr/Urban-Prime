@@ -1,9 +1,7 @@
-# Banco de dados
+# Banco
 urban_prime.sql
 *.sql
 
-# Arquivo de conexão
+# Configurações sensíveis
 php/conexao.php
-
-# Dependências do Composer
-/vendor/
+php/enviar_email.php
